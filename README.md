@@ -1,4 +1,4 @@
-# pogopowerupcost [![Build status](https://travis-ci.org/mathiasbynens/pogopowerupcost.svg?branch=master)](https://travis-ci.org/mathiasbynens/pogopowerupcost) [![PyPI version](https://img.shields.io/pypi/v/pogopowerupcost.svg)](https://pypi.python.org/pypi/pogopowerupcost)
+# pogopowerupcost [![Build status](https://travis-ci.org/HankB/pogopowerupcost.svg?branch=master)](https://travis-ci.org/HankB/pogopowerupcost) [![PyPI version](https://img.shields.io/pypi/v/pogopowerupcost.svg)](https://pypi.python.org/pypi/pogopowerupcost)
 
 _pogopowerupcost_ makes it easy to calculate how much stardust and candy it takes to power-up a Pokémon from level `a` to level `b` in Pokémon GO.
 
