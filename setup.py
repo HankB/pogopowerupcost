@@ -6,7 +6,7 @@ from setuptools import setup
 setup(
 	name = 'pogopowerupcost',
 	packages = ['pogopowerupcost'],
-	version = '1.0.2',
+	version = '1.1.0',
 	download_url = 'https://github.com/mathiasbynens/pogopowerupcost/tarball/v1.0.2',
 	description = 'Easily calculate how much stardust and candy it takes to power-up a Pokémon from level `a` to level `b` in Pokémon GO.',
 	classifiers=[
