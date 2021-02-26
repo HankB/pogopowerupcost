@@ -5,6 +5,22 @@ from unittest import TestCase
 
 from pogopowerupcost import calculate_powerup_cost
 
+class TestHelper(TestCase):
+	def test_1(self):
+		for level in (1, 1.5, 2, 2.5):
+			key = get_table_key(level)
+			self.assertEqual(key, 2.5)
+
+	def test_2(self):
+		for level in (3, 3.5, 4, 4.5):
+			key = get_table_key(level)
+			self.assertEqual(key, 4.5)
+
+	def test_3(self):
+		for level in (5, 5.5, 6, 6.5):
+			key = get_table_key(level)
+			self.assertEqual(key, 6.5)
+
 class TestCalculation(TestCase):
 
 	def test_scenario_1(self):
