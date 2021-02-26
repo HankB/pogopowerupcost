@@ -42,3 +42,28 @@ class TestCalculation(TestCase):
 		cost = calculate_powerup_cost(30.0, 38.5)
 		self.assertEqual(cost['stardust'], 121000)
 		self.assertEqual(cost['candy'], 140)
+
+	def test_scenario_5(self):
+		cost = calculate_powerup_cost(1, 1.5)
+		self.assertEqual(cost['stardust'], 200)
+		self.assertEqual(cost['candy'], 1)
+
+	def test_scenario_6(self):
+		cost = calculate_powerup_cost(1, 2)
+		self.assertEqual(cost['stardust'], 400)
+		self.assertEqual(cost['candy'], 2)
+
+	def test_scenario_7(self):
+		cost = calculate_powerup_cost(1, 2.5)
+		self.assertEqual(cost['stardust'], 600)
+		self.assertEqual(cost['candy'], 3)
+
+	def test_scenario_8(self):
+		cost = calculate_powerup_cost(1, 3)
+		self.assertEqual(cost['stardust'], 800)
+		self.assertEqual(cost['candy'], 4)
+
+	def test_scenario_9(self):
+		cost = calculate_powerup_cost(1, 3.5)
+		self.assertEqual(cost['stardust'], 1200)
+		self.assertEqual(cost['candy'], 5)
