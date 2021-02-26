@@ -3,7 +3,7 @@
 
 from unittest import TestCase
 
-from pogopowerupcost import calculate_powerup_cost
+from pogopowerupcost import calculate_powerup_cost, get_table_key
 
 class TestHelper(TestCase):
 	def test_1(self):
