@@ -55,11 +55,14 @@ SHADOW_COST_PER_POWERUP = {
 	40.5: [ 12000, 18], # Unconfirmed
 }
 
+def get_table_key(level):
+	return level-((level+1) % 2)+1.5
+
 def calculate_powerup_cost(from_level, to_level, cost_table=NORMAL_COST_PER_POWERUP):
 	total_stardust = 0
 	total_candy = 0
 	while from_level < to_level:
-		table_key = from_level-((from_level+1) % 2)+1.5
+		table_key = get_table_key(from_level)
 		stardust, candy = cost_table[table_key]
 		total_stardust += stardust
 		total_candy += candy
